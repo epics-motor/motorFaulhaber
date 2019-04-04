@@ -21,12 +21,13 @@ faulhaber_DBD += base.dbd
 # Include dbd files from all support applications:
 #ifdef ASYN
 faulhaber_DBD += asyn.dbd
+faulhaber_DBD += drvAsynSerialPort.dbd
 #endif
 faulhaber_DBD += motorSupport.dbd
-faulhaber_DBD += devFaulhaber.dbd
+faulhaber_DBD += devFaulhaberMotor.dbd
 
 # Add all the support libraries needed by this IOC
-faulhaber_LIBS += faulhaber
+faulhaber_LIBS += Faulhaber
 faulhaber_LIBS += motor
 #ifdef ASYN
 faulhaber_LIBS += asyn
