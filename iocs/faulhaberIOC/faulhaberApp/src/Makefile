@@ -5,6 +5,9 @@ include $(TOP)/configure/CONFIG
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 #=============================
 
+# The following are used for debugging messages.
+#!USR_CXXFLAGS += -DDEBUG
+
 #=============================
 # Build the IOC application
 
@@ -16,10 +19,21 @@ DBD += faulhaber.dbd
 faulhaber_DBD += base.dbd
 
 # Include dbd files from all support applications:
-#faulhaber_DBD += xxx.dbd
+#ifdef ASYN
+faulhaber_DBD += asyn.dbd
+#endif
+faulhaber_DBD += motorSupport.dbd
+faulhaber_DBD += devFaulhaber.dbd
 
 # Add all the support libraries needed by this IOC
-#faulhaber_LIBS += xxx
+faulhaber_LIBS += faulhaber
+faulhaber_LIBS += motor
+#ifdef ASYN
+faulhaber_LIBS += asyn
+#endif
+#ifdef SNCSEQ
+faulhaber_LIBS += seq pv
+#endif
 
 # faulhaber_registerRecordDeviceDriver.cpp derives from faulhaber.dbd
 faulhaber_SRCS += faulhaber_registerRecordDeviceDriver.cpp

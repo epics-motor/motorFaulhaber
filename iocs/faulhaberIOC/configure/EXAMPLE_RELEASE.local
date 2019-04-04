@@ -1,0 +1,6 @@
+# Use the following lines if motorFaulhaber was built inside motor
+MOTOR=
+-include $(MOTOR)/configure/RELEASE
+# Use the following lines if motorFaulhaber was built outside motor
+#!MOTOR_FAULHABER=
+#!-include $(MOTOR_FAULHABER)/configure/RELEASE.local
