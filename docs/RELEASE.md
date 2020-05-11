@@ -1,5 +1,20 @@
 # motorFaulhaber Releases
 
+## __R1-0-1 (2020-05-11)__
+R1-0-1 is a release based on the master branch.  
+
+### Changes since R1-0
+
+#### New features
+* None
+
+#### Modifications to existing features
+* None
+
+#### Bug fixes
+* Commit [62ae8c9](https://github.com/epics-motor/motorFaulhaber/commit/62ae8c9d46dfc0126aeb8e6bd480a5f13704ec6e): Include ``$(MOTOR)/modules/RELEASE.$(EPICS_HOST_ARCH).local`` instead of ``$(MOTOR)/configure/RELEASE``
+* Commit [e028325](https://github.com/epics-motor/motorFaulhaber/commit/e028325b50901c9da01955a84541ace0768a6882): Eliminated compiler warnings
+
 ## __R1-0 (2019-04-18)__
 R1-0 is a release based on the master branch.  
 
