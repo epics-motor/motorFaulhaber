@@ -1,4 +1,4 @@
-# motorVendor
+# motorFaulhaber
 EPICS motor drivers for the following [Faulhaber](https://www.faulhaber.com) controllers: MCDC2805 servo controller
 
 [![Build Status](https://travis-ci.org/epics-motor/motorFaulhaber.png)](https://travis-ci.org/epics-motor/motorFaulhaber)
