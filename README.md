@@ -1,6 +1,7 @@
 # motorVendor
 EPICS motor drivers for the following [Faulhaber](https://www.faulhaber.com) controllers: MCDC2805 servo controller
 
+[![Build Status](https://travis-ci.org/epics-motor/motorFaulhaber.png)](https://travis-ci.org/epics-motor/motorFaulhaber)
 
 motorFaulhaber is a submodule of [motor](https://github.com/epics-modules/motor).  When motorFaulhaber is built in the ``motor/modules`` directory, no manual configuration is needed.
 
